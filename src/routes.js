@@ -7,7 +7,7 @@ const router = Router();
 router.use(bodyParser.urlencoded({extended : true}));
 router.use(bodyParser.json() );
 
-router.post('/withdraw-ipn', controller.withdraw_ipn);
+router.post('/ipn', controller.callback_ipn);
 
 router.get('/deposit/estimate-payment', controller.estimate_payment);
 router.get('/deposit/status', controller.deposit_status);

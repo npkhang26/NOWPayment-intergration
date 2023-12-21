@@ -3,7 +3,7 @@ import { router } from './routes.js';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
 const app = express();
-const port = 5050; 
+const port = 4000; 
 
 app.use(morgan('combined'));
 app.use(bodyParser.urlencoded({extended : true}));
