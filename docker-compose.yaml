@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nowpayment-api:
+    image: nowpayment-api
+    env_file:
+      - .env
+    container_name: nowpayment-api
+    build: ./
+    restart: always
+    ports:
+      - '4000:4000'
